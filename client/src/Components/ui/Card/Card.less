@@ -1,0 +1,55 @@
+.card {
+    padding: 16px;
+    background: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    width: 200px;
+}
+
+.title {
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.text {
+    color: #808080;
+    word-wrap: break-word;
+}
+
+.header {
+    height: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close {
+    &::before,
+    &::after {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 15px;
+        height: 2px;
+        background-color: #333333;
+        content: "";
+        display: block;
+    }
+    &::before {
+        transform: rotate(-45deg);
+    }
+
+    &::after {
+        transform: rotate(45deg);
+    }
+}
+
+.button {
+    height: 15px;
+    width: 15px;
+    position: relative;
+    &:hover {
+        cursor: pointer;
+    }
+}
